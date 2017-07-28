@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<style> .chart rect { fill: steelblue } </style>
+
+<html><body>
+<p>Here are the magic numbers from Lost: <span id="data"></span></p>
+
+<svg class="chart"></svg>
+
+<script>
+var margin = 30;
+var width = 120;
+var height = 300;
+</script>
+
+d3.csv("/data/cities.csv", function(data) {
+  console.log(data[0]);
+});
